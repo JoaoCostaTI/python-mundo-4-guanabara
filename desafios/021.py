@@ -18,9 +18,6 @@ class Caneta:
         for l in range(n_linhas):
             print()
         
-        
-
-
 c1 = Caneta('green')
 c2 = Caneta('blue')
 c3 = Caneta('red')
