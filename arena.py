@@ -1,3 +1,7 @@
-valor = 0.400
+games = ['Fortnite','God of War', 'Mario Bros', 'Sonic']
 
-print(type(valor))
+conteudo = ''
+
+for num, game in enumerate(games):
+    conteudo += f'- {game}\n'
+print(conteudo)
