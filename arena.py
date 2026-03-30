@@ -1,7 +1,6 @@
-games = ['Fortnite','God of War', 'Mario Bros', 'Sonic']
+algo = 'A'
 
-conteudo = ''
-
-for num, game in enumerate(games):
-    conteudo += f'- {game}\n'
-print(conteudo)
+if algo == 'a' | algo == 'b':
+    print('Verdade')
+else:
+    print('Mentira')
