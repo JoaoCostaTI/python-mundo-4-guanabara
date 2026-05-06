@@ -1,12 +1,12 @@
 class Pessoa:
-    def __init__(self, nome, idade):
+    def __init__(self, nome = "", idade = 0):
         self.nome = nome
         self.idade = idade
 
     def fazer_aniversario(self):
-        pass
+        self.idade += 1
 
-    
+
 class Aluno(Pessoa):
     def __init__(self, nome, idade, curso, turma):
         super().__init__(nome, idade)
@@ -14,7 +14,8 @@ class Aluno(Pessoa):
         self.turma = turma
 
     def fazer_matricula(self):
-        pass
+        print(f'{self.nome} acabou de fazer a Matricula')
+
 
 class Professor(Pessoa):
     def __init__(self, nome, idade, especialidade, nivel):
@@ -23,7 +24,8 @@ class Professor(Pessoa):
         self.nivel = nivel
 
     def dar_aula(self):
-        pass
+        print(f'Professor {self.nome} começou a dar aula')
+
 
 class Funcionario(Pessoa):
     def __init__(self, nome, idade, cargo, setor):
@@ -32,4 +34,4 @@ class Funcionario(Pessoa):
         self.setor = setor
     
     def bater_ponto(self):
-        pass
+        print(f'{self.nome} acabou de bater ponto.')
